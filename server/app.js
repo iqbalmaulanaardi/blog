@@ -3,7 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-
+require('dotenv').config()
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var articlesRouter = require('./routes/articles')
@@ -11,10 +11,11 @@ var commentRouter = require('./routes/comments')
 var cors = require('cors')
 var app = express();
 var NODE_ENV = process.env.NODE_ENV || 'development'
-var mongooose = require('mongoose');
 console.log('db run on db: blog_' + NODE_ENV)
     // mongooose.connect('mongodb://127.0.0.1/blog_' + NODE_ENV, { useNewUrlParser: true })
-mongooose.connect('mongodb://127.0.0.1/blog_' + NODE_ENV, { useNewUrlParser: true })
+    // mongooose.connect('mongodb://127.0.0.1/blog_' + NODE_ENV, { useNewUrlParser: true })
+var mongoose = require('mongoose');
+mongoose.connect(`mongodb://${process.env.db_user}:${process.env.db_password}@ds055980.mlab.com:55980/blog`, { useNewUrlParser: true })
 
 app.use(cors());
 // view engine setup
