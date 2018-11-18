@@ -1,0 +1,12 @@
+{
+    "type": "service_account",
+    "project_id": "hot-deal-221803",
+    "private_key_id": "1bf88a0b861c8e0beef25d8208de976f6213b451",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDQ+C401sqTlR3O\naL/MeggnYmQDUt6xzwfPgiFVROEtPIyIq8PLDZYQhHAsjEOmOl61ACLSvSPXbjeU\nqVQRNt/rPmhgnGRjHRqyxjQTZ1Rbc4iyCdseflDe37+1aMVfvXSBrwWFpqLla5fw\nODraF0dDsKzD0NXu0dHGQzl/79Eg0p65zSxpB4gBiReRCCOhxb1/xXTKpOLOvjtb\noYJVEnSuFDDT3qASxYmWCPoRSXvhGuhMkvZaPjVj4BKbyHP5EeLPfii2uu/Am42B\nCMpUAhPeqU+C7rUgMQXGbMqj/rquT+H/n6xBfR6OM5gHcPb0bGByJZufIz1hVlL7\npZD2pTzDAgMBAAECggEAQJ9vUqHV9bvYgtt77NUULnHL8gcvnRckGDTq7/6kECQ4\nZY+QtfuWm7cJJY2e4goM/bZ0Dm21ZsrL32pZ+BTbPFmJV88lcE0w03Zd5l4/BST+\nceiAXba8daAGHiivWQMyw2QHtiQpHf+e9ge9k3I9dJ5vXwL3FarHT6O8ZWcZaieI\ni3ouVVsP3PxJixrtNSvNWstPjVGlTFHqmEJhgw8l0e4hnzH4Hh+Tplknnnbwy2CO\nAbutgx8RCLoMlVGDobbe1s1PQ73lA8XKJcisNA7g0/1Z0jK2mRFLIhgL4mx6f9FG\ntyn4Y6KBQ4CzVjvyALiYlbG6TaNd890nlAHg9F2X6QKBgQD9lJHfTbHZyTnRR9ja\nYOzCoxl6GWHI9RtAKLu8myuZhMXHTz5hqM4QvvoK9bnaIu8BQLeU8vO/YtTyIQ4H\n88m/kPmohR0IsKyQzsb3fHysp9im2djmS3fl/xhW3UBwd2DfjG3o80YsJGtrNPDP\nHxRF+iNrzsmYtc52j71FyqdcVQKBgQDS9qNSq6FnIUfg5ssDrbElhfLzWHyAtTR+\n52ZwO0OSZ1bubxHCC1YYtCKTgn/qRKc+NjbD7kMrskKzdBH7tlRR6JwYZrRWxz4S\nt9rnQfB7EoKf5mdbz/zdF70qpbujZqUo62k+26MFsEcvgD3WgRKdRo2CxafS75MV\nsKq0HDVMtwKBgF8wGwXg62ceUzbNKojnI1j40oJz7rH52C3gXICzGs24+mkTxQ3x\nyNCeb8wXa5mHzYIB4ifmfzsThW4SnGq9x7jCWgU5Wqm9cDm3dRbHwyEorHoNgo8I\nO0y50lAhI6RUG6gu1b9BOtEtJqmKqO6G8xxFhnBcom5RqNv2nw0IwoQ1AoGAAJA2\nCW9549ub5IbZPe5FzdLYvjubQYC6XihiBqSx3n82JTbYtkrvdOtuODSeANMkGy9r\n4AQP29sDAJWrwp9PBFT5rbsAekbX7JbfF8T+TmXTQXgNCJq6kyCQGcANizcn878F\nLezKN6ar2f2erKb1lMPuds3uT8rh+qnZGtgEcGsCgYEAwnuY1B6V70Vi35S5/v+Y\nSvEGB/Wgi9ZMKYqPJoKavp8ijF3M5+vjhW+vUBAeX6IyLW7nV9u6jn61HGxxigKq\nPn+Qkfwk3uIDzOmumE0cgS2jgQvdalAWrPSOBoVuaE+c/iQ/xVg7UqVKGVaYDkyi\nUOXQxjp/OCXlaBjCRT7SnuI=\n-----END PRIVATE KEY-----\n",
+    "client_email": "e-commerce-storage@hot-deal-221803.iam.gserviceaccount.com",
+    "client_id": "112633496645741131065",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/e-commerce-storage%40hot-deal-221803.iam.gserviceaccount.com"
+}
