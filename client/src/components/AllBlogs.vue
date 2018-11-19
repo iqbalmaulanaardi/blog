@@ -26,7 +26,7 @@ export default {
     }
   },
   created () {
-    axios.get('http://localhost:3000/articles/all/articles', {}, {})
+    axios.get('https://blog-server.iqbalmaulana.online/articles/all/articles', {}, {})
       .then(({ data }) => {
         this.articles = data
       })

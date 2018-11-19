@@ -22,12 +22,13 @@ export default {
   },
   methods: {
     register () {
-      axios.post(`http://localhost:3000/users`, {
+      axios.post(`https://blog-server.iqbalmaulana.online/users`, {
         email: this.inputemail,
         password: this.inputpassword
       }, {})
         .then((createduser) => {
           console.log(createduser)
+          this.$router.replace('login')
         })
         .catch((err) => {
           console.log(err.response.data.message.errors)

@@ -31,13 +31,13 @@ export default {
     }
   },
   beforeCreate () {
-    axios.get(`http://localhost:3000/verify`,{
+    axios.get(`https://blog-server.iqbalmaulana.online/verify`,{
       headers:{
         token : localStorage.getItem("token")
       }
     })
     .then(() => {
-      axios.get(`http://localhost:3000/articles`, {
+      axios.get(`https://blog-server.iqbalmaulana.online/articles`, {
         headers:{
           token : localStorage.getItem("token")
         }
@@ -52,13 +52,13 @@ export default {
   },
   methods: {
     deleteArticle(value){
-      axios.delete(`http://localhost:3000/articles/${value}`,{
+      axios.delete(`https://blog-server.iqbalmaulana.online/articles/${value}`,{
         headers: {
           token: localStorage.getItem("token")
         }
       })
       .then(() => {
-        axios.get(`http://localhost:3000/articles`, {
+        axios.get(`https://blog-server.iqbalmaulana.online/articles`, {
           headers:{
             token : localStorage.getItem("token")
           }

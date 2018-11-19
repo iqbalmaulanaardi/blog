@@ -38,7 +38,7 @@ export default {
     },
     deleteComment(value){
       console.log('ini apa',value)
-      axios.delete(`http://localhost:3000/comments/${this.$route.params.id}/${value}`,{
+      axios.delete(`https://blog-server.iqbalmaulana.online/comments/${this.$route.params.id}/${value}`,{
           headers: {
             token: localStorage.getItem("token")
           }

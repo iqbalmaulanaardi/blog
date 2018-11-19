@@ -27,7 +27,7 @@ export default {
   },
   mounted: function(){
     console.log(localStorage.getItem("token"))
-    axios.get(`http://localhost:3000/articles/one/${this.$route.params.id}`, {
+    axios.get(`https://blog-server.iqbalmaulana.online/articles/one/${this.$route.params.id}`, {
       headers:{
         token: localStorage.getItem("token")
       }

@@ -36,13 +36,13 @@ export default {
   },
   created (){
     let self = this
-    axios.get(`http://localhost:3000/articles/one/${this.$route.params.id}`,{
+    axios.get(`https://blog-server.iqbalmaulana.online/articles/one/${this.$route.params.id}`,{
       headers: {
         token: localStorage.getItem("token")
       }
     })
       .then(( {data} ) => {
-        axios.get(`http://localhost:3000/comments/${this.$route.params.id}`,{
+        axios.get(`https://blog-server.iqbalmaulana.online/comments/${this.$route.params.id}`,{
           headers: {
             token: localStorage.getItem("token")
           }
@@ -80,7 +80,7 @@ export default {
       return now.toLocaleDateString()+ ' ' + h + ':' + m + ' ' + ampm;
     },
     isPressedFunction(){
-      axios.get(`http://localhost:3000/verify`,{
+      axios.get(`https://blog-server.iqbalmaulana.online/verify`,{
         headers:{
           token : localStorage.getItem("token")
         }
@@ -100,7 +100,7 @@ export default {
     renewComment(){
       let self = this
       self.isPressed = false
-      axios.get(`http://localhost:3000/comments/${this.$route.params.id}`,{
+      axios.get(`https://blog-server.iqbalmaulana.online/comments/${this.$route.params.id}`,{
           headers: {
             token: localStorage.getItem("token")
           }

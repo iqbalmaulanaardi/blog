@@ -53,6 +53,23 @@ class ArticleController {
             });
         });
         blobStream.end(req.file.buffer);
+        //testing
+        // Article.create({
+        //         title: req.body.title,
+        //         content: req.body.content,
+        //         createdAt: new Date(),
+        //         updatedAt: new Date(),
+        //         user_id: req.logged_in_user._id
+        //     })
+        //     .then((data) => {
+        //         res.status(200).json(data)
+        //     })
+        //     .catch((err) => {
+        //         console.log(err)
+        //         res.status(500).json({
+        //             message: err.message
+        //         })
+        //     })
 
     }
     static getArticles(req, res) {

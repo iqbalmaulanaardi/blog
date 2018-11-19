@@ -22,7 +22,7 @@ export default {
   },
   methods: {
     login () {
-      axios.post(`http://localhost:3000/users/signin`, {
+      axios.post(`https://blog-server.iqbalmaulana.online/users/signin`, {
         email: this.inputemail,
         password: this.inputpassword
       }, {})

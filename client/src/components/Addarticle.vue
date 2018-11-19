@@ -29,7 +29,7 @@ export default {
     }
   },
   beforeCreate: function(){
-    axios.get(`http://localhost:3000/verify`,{
+    axios.get(`https://blog-server.iqbalmaulana.online/verify`,{
       headers: {
         token: localStorage.getItem("token")
       }
@@ -48,7 +48,7 @@ export default {
           formData.append('image', this.file)
           formData.append('title', this.inputtitle)
           formData.append('content', this.inputdescription)
-      axios.post('http://localhost:3000/articles', formData, {
+      axios.post('https://blog-server.iqbalmaulana.online/articles', formData, {
         headers: {
           token: localStorage.getItem('token')
         }

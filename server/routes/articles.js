@@ -9,7 +9,7 @@ const upload = multer({
         fileSize: 5 * 1024 * 1024 // no larger than 5mb
     }
 });
-
+// router.post('/', Middleware.isLogin, Article.createArticle);
 router.post('/', Middleware.isLogin, upload.single('image'), Article.createArticle);
 router.get('/', Middleware.isLogin, Article.getArticles);
 router.get('/all/articles', Article.getAll);

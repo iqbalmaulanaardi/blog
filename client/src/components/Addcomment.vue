@@ -21,7 +21,7 @@ export default {
   methods: {
     addComment(){
       console.log(this.$route.params)
-      axios.post(`http://localhost:3000/comments/${this.$route.params.id}`,{
+      axios.post(`https://blog-server.iqbalmaulana.online/comments/${this.$route.params.id}`,{
         content: this.comment
       },{
         headers: {
@@ -29,7 +29,7 @@ export default {
         }
       })
         .then(({ data })=>{
-          axios.get(`http://localhost:3000/comments/one/${data._id}`,{
+          axios.get(`https://blog-server.iqbalmaulana.online/comments/one/${data._id}`,{
             headers: {
               token: localStorage.getItem("token")
             }

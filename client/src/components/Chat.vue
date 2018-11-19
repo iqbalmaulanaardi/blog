@@ -60,7 +60,7 @@ export default {
       }
     },
     mounted(){
-      axios.get(`http://localhost:3000/verify`,{
+      axios.get(`https://blog-server.iqbalmaulana.online//verify`,{
       headers:{
         token : localStorage.getItem("token")
       }

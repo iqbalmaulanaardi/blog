@@ -13,10 +13,10 @@ var app = express();
 var NODE_ENV = process.env.NODE_ENV || 'development'
 console.log('db run on db: blog_' + NODE_ENV)
     // mongooose.connect('mongodb://127.0.0.1/blog_' + NODE_ENV, { useNewUrlParser: true })
-    // mongooose.connect('mongodb://127.0.0.1/blog_' + NODE_ENV, { useNewUrlParser: true })
 var mongoose = require('mongoose');
+// mongoose.connect('mongodb://127.0.0.1/blog_' + NODE_ENV, { useNewUrlParser: true });
 mongoose.connect(`mongodb://${process.env.db_user}:${process.env.db_password}@ds055980.mlab.com:55980/blog`, { useNewUrlParser: true })
-
+console.log(`mongodb://${process.env.db_user}:${process.env.db_password}@ds055980.mlab.com:55980/blog`)
 app.use(cors());
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
