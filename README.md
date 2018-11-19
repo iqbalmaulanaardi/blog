@@ -1,4 +1,11 @@
 Hosting di : http://blog.iqbalmaulana.online/
+isi .env : 
+JWT_SECRET=inimateritdd
+CLOUD_BUCKET=e-commerce-storage
+GCLOUD_PROJECT=hot-deal-221803
+KEYFILE_PATH=keyfile.json
+db_user=blog
+db_password=blog123456
 
 **POST user**
 ----
