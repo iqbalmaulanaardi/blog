@@ -42,23 +42,23 @@ export default {
   },
   methods: {
     editarticle (){
-      console.log('sini')
       let obj = {
         title: this.inputtitle,
         content: this.inputdescription
       }
-      // axios.put(`http://localhost:3000/articles/${this.$route.params.id}`, obj, {
-      //   headers: {
-      //     token: localStorage.getItem('token')
-      //   }
-      // })
-      // .then(({ data }) => {
-      //   console.log('sini')
-      //   this.$router.replace('/blog/myblogs')
-      // })
-      // .catch((err) => {
-      //   console.log(err)
-      // })
+      axios.put(`https://blog-server.iqbalmaulana.online/articles/${this.$route.params.id}`, obj, {
+        headers: {
+          token: localStorage.getItem('token')
+        }
+      })
+      .then(({ data }) => {
+        console.log(data)
+        // this.$emit('editarticle', data)
+        this.$router.replace('/blog/myblogs')
+      })
+      .catch((err) => {
+        console.log(err)
+      })
     }
   }
 }

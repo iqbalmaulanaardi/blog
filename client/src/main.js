@@ -14,7 +14,7 @@ Vue.use(wysiwyg, {
 
     // if the image option is not set, images are inserted as base64
     image: {
-        uploadURL: "http://localhost:3000/articles/uploadImage",
+        uploadURL: "https://blog-server.iqbalmaulana.online/articles/uploadImage",
         dropzoneOptions: {}
     },
 

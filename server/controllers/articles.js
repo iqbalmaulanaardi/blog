@@ -118,7 +118,10 @@ class ArticleController {
                 updatedAt: new Date()
             })
             .then((data) => {
-                res.status(200).json(data)
+                Article.find({})
+                    .then((response) => {
+                        res.status(200).json(response)
+                    })
             })
             .catch((err) => {
                 res.status(500).json({
